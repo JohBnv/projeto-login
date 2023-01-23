@@ -3,7 +3,7 @@
 /* 
 Paleta de cores
 verde #49a09d
-Lilás #5f2cB
+Lilás #5f2cBe
 */
 
 * {
@@ -15,7 +15,7 @@ Lilás #5f2cB
 }
 
 body, html {
-    background-color: #529bc5;
+    background-color: #8B27E3;
     height: 100vh;
     width: 100vw;
 }
@@ -34,10 +34,13 @@ section#login {
     overflow: hidden;
 
     background-color: white;
-    width: 250px;
-    height: 500px;
+    width: 260px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
+
+    transition: width 0.5s, heigth 0.5s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
@@ -51,4 +54,54 @@ section#login > div#imagem {
 section#login > div#formulario {
     display: block;
     padding: 10px;
+}
+
+section div > h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
+form > div.campo {
+    background-color: #8B27E3;
+    display: block;
+    height: 40px;
+    border-radius: 10px;
+    margin: 5px 0px;
+}
+form  label {
+    display: none;
+}
+form > a.botton {
+    text-decoration: none;
+    display: block;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    border: 1px solid  #4dc74d;
+    color: rgb(131, 131, 131);
+    border-radius: 10px;
+    margin-top: 5px;
+}
+form > a.botton:hover {
+    border: 1px solid  #125712;
+    color:  #4dc74d;
+}
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #3f3fb9;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+form > input[type=submit]:hover {
+    background-color:  #1f1f74;
 }
